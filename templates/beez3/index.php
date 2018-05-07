@@ -106,7 +106,7 @@ JHtml::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true
 		<div id="all">
 			<div id="back">
 				<header id="header">
-					<div class="w-100 text-center" style="position:absolute;top: 5em;"><img src="http://dgxg.njust.edu.cn/_upload/tpl/02/b1/689/template689/images/logo.png" /></div>
+					<!-- <div class="w-100 text-center" style="position:absolute;top: 5em;"><img src="http://dgxg.njust.edu.cn/_upload/tpl/02/b1/689/template689/images/logo.png" /></div> -->
 					<div class="logoheader">
 						<h1 id="logo">
 						<?php if ($logo) : ?>
