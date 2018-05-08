@@ -106,8 +106,8 @@ JHtml::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true
 		<div id="all">
 			<div id="back">
 				<header id="header">
-					<!-- <div class="w-100 text-center" style="position:absolute;top: 5em;"><img src="http://dgxg.njust.edu.cn/_upload/tpl/02/b1/689/template689/images/logo.png" /></div> -->
-					<div class="logoheader">
+					<div class="w-100 text-center" style="position:absolute;top: 5em;"><img src="images/banner.jpg" /></div>
+					<!-- <div class="logoheader">
 						<h1 id="logo">
 						<?php if ($logo) : ?>
 							<img src="<?php echo $this->baseurl; ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($this->params->get('sitetitle')); ?>" />
@@ -120,7 +120,8 @@ JHtml::_('script', 'jui/html5.js', array('version' => 'auto', 'relative' => true
 						<span class="header1">
 						<?php echo htmlspecialchars($this->params->get('sitedescription')); ?>
 						</span></h1>
-					</div><!-- end logoheader -->
+					</div> -->
+					<!-- end logoheader -->
 					<ul class="skiplinks">
 						<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ3_SKIP_TO_CONTENT'); ?></a></li>
 						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_NAV'); ?></a></li>

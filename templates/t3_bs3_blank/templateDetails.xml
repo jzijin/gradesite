@@ -98,6 +98,18 @@
 		<position>footer-9</position>
 		<position>footer-10</position>
 		<position>debug</position>
+		<position>article-1</position>
+		<position>article-2</position>
+		<position>article-3</position>
+		<position>article-4</position>
+		<position>article-5</position>
+		<position>article-6</position>
+		<position>article2-1</position>
+		<position>article2-2</position>
+		<position>article2-3</position>
+		<position>article2-4</position>
+		<position>article2-5</position>
+		<position>article2-6</position>
 	</positions>
 
 	<config>

@@ -34,10 +34,10 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
 			<div class="logo-<?php echo $logotype, ($logoimgsm ? ' logo-control' : '') ?>">
 				<a href="<?php echo JUri::base() ?>" title="<?php echo strip_tags($sitename) ?>">
 					<?php if($logotype == 'image'): ?>
-						<img class="logo-img" src="<?php echo JUri::base(true) . '/' . $logoimage ?>" alt="<?php echo strip_tags($sitename) ?>" />
+						<img class="logo-img img-responsive" src="<?php echo JUri::base(true) . '/' . $logoimage ?>" alt="<?php echo strip_tags($sitename) ?>" />
 					<?php endif ?>
 					<?php if($logoimgsm) : ?>
-						<img class="logo-img-sm" src="<?php echo JUri::base(true) . '/' . $logoimgsm ?>" alt="<?php echo strip_tags($sitename) ?>" />
+						<img class="logo-img-sm img-responsive" src="<?php echo JUri::base(true) . '/' . $logoimgsm ?>" alt="<?php echo strip_tags($sitename) ?>" />
 					<?php endif ?>
 					<span><?php echo $sitename ?></span>
 				</a>
