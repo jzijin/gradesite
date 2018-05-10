@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bug反馈</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquerymin.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="./ueditor/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="./ueditor/ueditor/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 style="text-align: center">bug反馈和建议</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <form action="validate.php" method="POST" role="form" enctype="multipart/form-data">
+                    
+
+                    <div class="form-group">
+                        <label>bug简单描述:</label>
+                        <p>
+                            <input type="text" name="bug_title">
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>bug详细描述或意见反馈:</label>
+                        <p>
+                            <script id="container" name="bug_content" type="text/plain" style="height:800px;">
+                                
+                            </script>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <p>
+                            <input type="button" value="提交">
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="well">
+            <footer class="text-center">Copyright &copy; 2018 南京理工大学理学院2016级</footer>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+<script>
+    $('input[type=button]').click(function () {
+        //获取整个form表单的内容
+        var data = {};
+        var t = $('form').serializeArray();
+
+        console.log(t);
+        $.each(t, function () {
+            data[this.name] = this.value;
+        });
+        //Ajax发送post请求
+        $.post('validate.php', data, function (msg) {
+            alert(msg);
+            //提交成功后刷新页面
+            window.location = 'http://193.112.85.48/grade-site';
+        });
+    });
+</script>
+</html>

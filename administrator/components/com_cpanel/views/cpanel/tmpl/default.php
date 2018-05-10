@@ -18,6 +18,7 @@ $user = JFactory::getUser();
 	if ($iconmodules) : ?>
 		<div class="span3">
 			<div class="cpanel-links">
+				<a href="http://193.112.85.48/grade-site/administrator/bug" style="font-size:16px;" target="_blank">bug反馈结果</a>
 				<?php
 				// Display the submenu position modules
 				foreach ($iconmodules as $iconmodule)

@@ -17,7 +17,8 @@ defined('_JEXEC') or die;
 			<span itemprop="name">
 				<!-- <?php echo $item->title; ?> -->
 				<?php echo mb_substr($item->title, 0, 18, "utf-8");?>
-				<?php if($item->title > 15) echo "....";?>
+				
+				<?php if(mb_strlen($item->title) > 18) echo "....";?>
 			</span>
 		</a>
 	</li>
